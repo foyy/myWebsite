@@ -29,13 +29,16 @@
   font-weight: 700;
   outline:none;
   cursor: pointer;
+  transition: .8s;
 }
 
-.Header button {
+.Header button:hover {
   background: white;
   color: black;
   box-shadow: 0 10px 20px rgba(0,0,0,0.25);
-  transform: translateY(-3px)
+  transform: translateY(-3px);
+  animation-timing-function: cubic-bezier(.2,.8,.2,1);
+
 }
 
 @media(max-width:640px) {
