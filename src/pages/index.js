@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Card from '../components/Card';
+import Section from '../components/sections';
+
 
 const IndexPage = () => (
   <div>
@@ -47,6 +49,12 @@ const IndexPage = () => (
           url='http://atweetio.herokuapp.com'
         />
       </div>
+      <Section
+        image={require('../images/wallpaper.jpg')}
+        logo={require('../images/logo-react.png')}
+        title='Experience'
+        text="I've like, used React and stuff"
+      />
     </div>
   </div>
 
