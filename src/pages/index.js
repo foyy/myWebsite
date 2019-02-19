@@ -43,6 +43,7 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+    <div id='ScrollToCards' className='beforeJump'></div>
     <div className='Cards'>
       <h2>Projects</h2>
       <div className='CardGroup'>
@@ -72,12 +73,14 @@ const IndexPage = () => (
           url='http://atweetio.herokuapp.com'
         />
       </div>
+      <div id='ScrollToExp' className='beforeJump'></div>
       <Section
         image={require('../images/wallpaper.jpg')}
         logo={require('../images/logo-react.png')}
         title='Experience'
         text="I've like, used React and stuff"
       />
+      <div id="ScrollToSkills" className="beforeJump"></div>
       <CellSectionCaption>What I Know</CellSectionCaption>
       <CellSectionGroup>
         {staticdata.skills.map(skill => (

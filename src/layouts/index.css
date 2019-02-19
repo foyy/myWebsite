@@ -67,6 +67,11 @@ a {
   color: black;
 }
 
+.beforeJump{
+   padding-top:120px;
+   margin-top:-120px;
+}
+
 @media (max-width: 640px) {
   .HeroGroup {
     padding: 100px 20px;
@@ -123,7 +128,7 @@ a {
 }
 
 .CardGroup {
-  margin: 50px 40px 100px;
+  margin: 50px 40px 70px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
