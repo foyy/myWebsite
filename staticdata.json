@@ -1,0 +1,94 @@
+{
+  "skills": [
+    {
+      "title": "Javascript",
+      "image": "https://cl.ly/3b2ecb1532ef/download/iconfinder_code-programming-javascript-software-develop-command-language_652581.svg"
+    },
+    {
+      "title": "React",
+      "image": "https://cl.ly/891c57904081/download/iconfinder_react_1296845%252520(1).svg"
+    },
+    {
+      "title": "Vue",
+      "image": "https://cl.ly/06ce7f7ece0d/download/1_GrnZQhGidCAjnfE7CUyzcA.png"
+    },
+    {
+      "title": "RESTful API",
+      "image": "https://cl.ly/ad1cf022c3de/download/download%252520(1).png"
+    },
+    {
+      "title": "Node.js",
+      "image": "https://cl.ly/97a3bcafca67/download/copy.ico"
+    },
+    {
+      "title": "SQL",
+      "image": "https://cl.ly/0c1edd4c9d4d/download/download%20(2).png"
+    },
+    {
+      "title": "MongoDB",
+      "image": "https://cl.ly/4ef3fe8065cc/download/download.jpeg"
+    },
+    {
+      "title": "Express",
+      "image": "https://cl.ly/38d735bdb25a/download/download%252520(4).png"
+    },
+    {
+      "title": "PostgreSQL",
+      "image": "https://cl.ly/3c3c9392fb50/download/download%20(5).png"
+    },
+    {
+      "title": "GraphQL",
+      "image": "https://cl.ly/69525611fd3e/download/graphqllogo.png"
+    },
+    {
+      "title": "Styled Components",
+      "image": "https://cl.ly/a762c44de62b/download/download%20(1).jpeg"
+    },
+    {
+      "title": "JQuery",
+      "image": "https://cl.ly/5c09bfa24bd3/download/download%20(6).png"
+    }
+  ],
+  "desiredSkills": [
+    {
+      "title": "Docker",
+      "image": "https://cl.ly/b2d923e7bdad/download/download%20(7).png"
+    },
+    {
+      "title": "Kubernetes",
+      "image": "https://cl.ly/cf2cef861644/download/download%20(8).png"
+    },
+    {
+      "title": "AWS",
+      "image": "https://cl.ly/aad7e2459df2/download/download%20(2).jpeg"
+    },
+    {
+      "title": "React Native",
+      "image": "https://cl.ly/0b41eb06e6f3/download/L79AkZOy_400x400.png"
+    },
+    {
+      "title": "Python",
+      "image": "https://cl.ly/9a08f2ec6e36/download/download%20(3).jpeg"
+    },
+    {
+      "title": "Django",
+      "image": "https://cl.ly/b3ebfbd51f9b/download/download%20(4).jpeg"
+    },
+    {
+      "title": "Linux",
+      "image": "https://cl.ly/6693ecbcb80d/download/download%20(10).png"
+    },
+    {
+      "title": "Redux",
+      "image": "https://cl.ly/b99f81137b86/download/download%20(11).png"
+    },
+    {
+      "title": "Go",
+      "image": "https://cl.ly/31559c58f0cd/download/download%20(12).png"
+    },
+    {
+      "title": "Microservices",
+      "image": "https://cl.ly/bc24a6238af4/download/download%20(13).png"
+    }
+  ]
+}

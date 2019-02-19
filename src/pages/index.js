@@ -2,7 +2,30 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Card from '../components/Card';
 import Section from '../components/sections';
+import staticdata from '../../staticdata.json';
+import Cell from '../components/Cell';
+import styled from 'styled-components'
+import ScrollAnimation from 'react-animate-on-scroll';
 
+
+
+
+const CellSectionCaption = styled.p`
+  text-align: center;
+  font-size: 45px;
+
+`
+
+const CellSectionGroup = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr
+  grid-column-gap: 20px;
+
+
+  @media (max-width:800px) {
+    grid-template-columns: repeat(1,1fr)
+  }
+`
 
 const IndexPage = () => (
   <div>
@@ -55,6 +78,19 @@ const IndexPage = () => (
         title='Experience'
         text="I've like, used React and stuff"
       />
+      <CellSectionCaption>What I Know</CellSectionCaption>
+      <CellSectionGroup>
+        {staticdata.skills.map(skill => (
+          <Cell title={skill.title} image={skill.image} />
+        ))}
+      </CellSectionGroup>
+      <CellSectionCaption>What I'd Love To Know</CellSectionCaption>
+      <CellSectionGroup>
+        {staticdata.desiredSkills.map(skill => (
+          <Cell title={skill.title} image={skill.image} />
+        ))}
+      </CellSectionGroup>
+
     </div>
   </div>
 
