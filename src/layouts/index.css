@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
 
 body {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Old Standard TT', serif;
   margin: 0;
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
   line-height: 1.3;
 }
+
 
 a {
   color: #5334F5;
@@ -134,6 +137,8 @@ a {
   grid-gap: 40px;
   justify-items: center;
 }
+
+
 
 @media (max-width: 1060px) {
   .CardGroup {

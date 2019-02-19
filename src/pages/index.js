@@ -48,29 +48,33 @@ const IndexPage = () => (
       <h2>Projects</h2>
       <div className='CardGroup'>
         <Card
-          title='FireconTX'
-          text='Company Site with Invoice Payment'
-          image={require('../images/logo-react.png')}
-          url='https://www.firecontx.com'
+          title={staticdata.applications[0].title}
+          text={staticdata.applications[0].text}
+          image={staticdata.applications[0].image}
+          url={staticdata.applications[0].url}
+          co="Card"
         />
+        <Card
+          title={staticdata.applications[1].title}
+          text={staticdata.applications[1].text}
+          image={staticdata.applications[1].image}
+          url={staticdata.applications[1].url}
+          co='Card'
+        />
+        <Card
+          title={staticdata.applications[2].title}
+          text={staticdata.applications[2].text}
+          image={staticdata.applications[2].image}
+          url={staticdata.applications[2].url}
+          co="Card Avoteio"
 
-        <Card
-          title='MyMedia'
-          text='User Curated Art Recommendations'
-          image={require('../images/logo-react.png')}
-          url='https://github.com/TeamBoosted'
         />
         <Card
-          title='Avoteio'
-          text='Social Listening Through Spotify'
-          image={require('../images/logo-react.png')}
-          url='http://avoteio.herokuapp.com'
-        />
-        <Card
-          title='Atweetio'
-          text='Personality By Tweet'
-          image={require('../images/logo-react.png')}
-          url='http://atweetio.herokuapp.com'
+          title={staticdata.applications[3].title}
+          text={staticdata.applications[2].text}
+          image={staticdata.applications[3].image}
+          url={staticdata.applications[3].url}
+          co='Card Atweetio'
         />
       </div>
       <div id='ScrollToExp' className='beforeJump'></div>

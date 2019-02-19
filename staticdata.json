@@ -90,5 +90,31 @@
       "title": "Microservices",
       "image": "https://cl.ly/bc24a6238af4/download/download%20(13).png"
     }
+  ],
+  "applications": [
+    {
+      "title": "FireconTX",
+      "text": "Company Site with Invoice Payment",
+      "image": "https://cl.ly/42a1ea36a36b/download/Image%2525202019-02-19%252520at%2525204.24.59%252520PM.png",
+      "url": "https://www.firecontx.com"
+    },
+    {
+      "title": "MyMedia",
+      "text": "User Curated Art Recommendations",
+      "image": "https://cl.ly/7f1d3687e891/download/ext.jpeg",
+      "url": "https://github.com/TeamBoosted"
+    },
+    {
+      "title": "Avoteio",
+      "text": "Social Listening Through Spotify",
+      "image": "https://cl.ly/9b24f7c23933/download/Image%202019-02-19%20at%204.34.53%20PM.png",
+      "url": "http://avoteio.herokuapp.com"
+    },
+    {
+      "title": "Atweetio",
+      "text": "Personality By Tweet",
+      "image": "https://cl.ly/6c99663c4926/download/ext%20(1).jpeg",
+      "url": "http://atweetio.herokuapp.com"
+    }
   ]
 }

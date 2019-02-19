@@ -3,7 +3,7 @@ import './Cards.css'
 
 
 const Card = props => (
-  <a href={props.url} className='Card'>
+  <a href={props.url} className={props.co}>
 
     <img src={props.image} />
     <h3>{props.title}</h3>
