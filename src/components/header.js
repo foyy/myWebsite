@@ -6,7 +6,7 @@ class Header extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      hasScrolled: false
+      hasScrolled: false,
     }
   }
 
@@ -15,7 +15,7 @@ class Header extends React.Component {
   }
 
   handleScroll = event => {
-    const scrollTop = window.pageYOffset;
+    const scrollTop = window.pageYOffset
 
     if (scrollTop > 50) {
       this.setState({ hasScrolled: true })
@@ -26,16 +26,18 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className={this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header'} >
+      <div
+        className={this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header'}
+      >
         <div className="HeaderGroup">
-          <Link to="/"><img width="30" src={require('../images/logo-designcode.svg')} /></Link>
-          <a href='#ScrollToExp'>Experience</a>
-          <a href='#ScrollToCards'>Projects </a>
-          <a href='#ScrollToSkills'>Skills </a>
+          {/* <Link to="/">
+            <img width="30" src={require('../images/me.jpg')} />
+          </Link> */}
+          <a href="#ScrollToExp">Experience</a>
+          <a href="#ScrollToCards">Projects </a>
+          <a href="#ScrollToSkills">Skills </a>
 
           <Link to="/workshops">Contact</Link>
-          <Link><button to="/buy">Buy</button></Link>
-
         </div>
       </div>
     )
