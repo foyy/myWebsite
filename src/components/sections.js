@@ -1,22 +1,21 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 const SectionGroup = styled.div`
   margin: 100px 0 0;
   background: url(${props => props.image});
   background-size: cover;
-  display:grid;
-  height: 720px;
+  display: grid;
+  height: 620px;
   grid-template-rows: 300px auto;
   grid-gap: 20px;
-  position:relative;
-
+  position: relative;
 `
 
 const SectionLogo = styled.img`
-  align-self: end;
-  width: 118px;
+  width: 140px;
   margin: 0 auto;
+  align-self: end;
 `
 
 const SectionTitleGroup = styled.div`
@@ -34,15 +33,14 @@ const SectionTitleGroup = styled.div`
 `
 
 const SectionTitle = styled.h3`
-    color: white;
-    font-size: 60px;
-    margin: 0;
-    line-height: 1.2;
- 
-    @media (max-width: 640px) {
-        font-size: 40px;
-    }
+  color: white;
+  font-size: 60px;
+  margin: 0;
+  line-height: 1.2;
 
+  @media (max-width: 640px) {
+    font-size: 40px;
+  }
 `
 
 const SectionText = styled.p`
@@ -61,5 +59,4 @@ const Section = props => (
   </SectionGroup>
 )
 
-
-export default Section;
+export default Section
