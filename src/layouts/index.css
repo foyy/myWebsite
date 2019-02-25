@@ -17,7 +17,7 @@ a {
 }
 
 .Hero {
-  background: url('../images/redbardiagonalhweb.jpg');
+  background: url('../images/bluebarhweb.jpg');
   height: 820px;
   background-size: cover;
   background-position: center;
@@ -135,81 +135,71 @@ a {
 
 @media (max-width: 640px) {
   .Hero .Logos {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
   }
 }
 
 /************* ABOUT ME ***********/
 
 .AboutMe {
-  /* font-family: 'Courier New', Courier, monospace; */
-  margin: 5px;
-  height: 920px;
+  position:relative;
+  display: grid;
+  grid-template-rows: [header] 100px [myInfo] auto [pics] auto;
+  justify-items: center;
+  grid-gap: 40px
+}
+
+.AboutMe h1{
+  grid-row: header;
 }
 
 .AboutMeGroup {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 1fr;
+  grid-row: myInfo;
+  display:grid;
+  grid-template-columns: [bigPic] 1fr [myText] 1fr;
   justify-items: center;
-  align-items: center;
-  height: 550px;
+  grid-gap: 40px;
 }
 
-.AboutMe img {
-  width: 450px;
-  border-radius: 60px;
+.AboutMeGroup img{
+  width: 500px;
 }
 
-.AboutMe .AboutMeText {
-  width: 600px;
-}
-
-.AboutMe h1 {
-  font-size: 55px;
-  text-align: center;
-}
-
-.AboutMe h5 {
-  font-size: 28px;
-  font-weight: 5;
-}
-
-.AboutMe p {
-  font-size: 24px;
-}
 
 .AboutMePictures {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-  justify-items: center;
+  grid-row: pics;
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 30px;
+  
+
 }
 
 .AboutMePictures img {
-  width: 220px;
-  border-radius: 35px;
+  width: 200px;
 }
 
-@media (max-width: 720px) {
-  .AboutMe {
-    grid-template-columns: 1fr;
+
+@media(max-width:720px) {
+  .AboutMeGroup{
+    grid-template-columns: repeat(1,1fr);
   }
 
-  .AboutMePictures {
-    grid-template-columns: 1fr;
-  }
+  .AboutMeGroup img{
+  width: 350px;
 }
 
-@media (max-width: 1060px) {
-  .AboutMe {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .AboutMePictures {
-    grid-template-columns: 1fr 1fr;
-  }
+.AboutMePictures {
+  grid-template-columns: repeat(1,1fr);
 }
+
+.AboutMePictures img {
+  width: 300px;
+}
+}
+
+
 
 .Cards h2 {
   margin: 50px 20px;

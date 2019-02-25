@@ -54,7 +54,7 @@ const IndexPage = () => (
     <div className="AboutMe">
       <h1>About Me</h1>
       <div className="AboutMeGroup">
-        <img src={require('../images/me.jpg')} />
+          <img id="bigMePicture"  src={require('../images/me.jpg')} />
         <div className="AboutMeText">
           <h5>
             I'm a full-stack engineer with a passion for building out beatiful
@@ -69,6 +69,10 @@ const IndexPage = () => (
         </div>
       </div>
       <div className="AboutMePictures">
+      {/* <div>picture</div>
+      <div>picture</div>
+      <div>picture</div>
+      <div>picture</div> */}
         <img src={require('../images/meandkelly.jpg')} />
         <img src={require('../images/albus and luna.png')} />
         <img
@@ -84,7 +88,9 @@ const IndexPage = () => (
       image={require('../images/wallpaper.jpg')}
       logo={require('../images/logo-react.png')}
       title="Experience"
-      text="I've like, used React and stuff"
+      text="I'm a Full Stack Software Engineer with experience using Javascript, React, Vue, Node.js, Express, MongoDB, Postgres, HTML, and CSS.
+I love making the web a better place for us to interact with our world. I build full-stack applications with a focus on modern design and dependency because the way we connect to our digital lives should be beautiful, intuitive, and reliable.
+I used to teach students about how wildly-amazing the time we live in is due to new technologies; now I help make it that way."
     />
 
     <div id="ScrollToCards" className="beforeJump" />

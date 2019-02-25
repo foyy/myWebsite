@@ -66,8 +66,8 @@ const Image = styled.div`
 const Cell = ({ title, image }) => (
   <ScrollAnimation
     animateIn="fadeIn"
-    delay={200}
-    duration={3}>
+    delay={140}
+    duration={2}>
 
     <CellGroup>
       <Image image={image} />

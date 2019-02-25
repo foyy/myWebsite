@@ -6,16 +6,16 @@ const SectionGroup = styled.div`
   background: url(${props => props.image});
   background-size: cover;
   display: grid;
-  height: 620px;
-  grid-template-rows: 300px auto;
+  height: 720px;
+  grid-template-row: 300px;
   grid-gap: 20px;
   position: relative;
 `
 
 const SectionLogo = styled.img`
   width: 140px;
-  margin: 0 auto;
-  align-self: end;
+  margin: 30px auto;
+  align-self: start;
 `
 
 const SectionTitleGroup = styled.div`
@@ -24,7 +24,7 @@ const SectionTitleGroup = styled.div`
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 300px auto;
-    grid-template-rows: auto 100% 
+    grid-template-rows: auto 100%; 
 
     @media (max-width: 720px) {
         grid-template-columns: 1fr;
