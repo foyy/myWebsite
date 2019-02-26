@@ -63,3 +63,13 @@
   padding-top: 5px;
   color: white;
 }
+
+@media(max-width: 720px) {
+  .Card {
+    /* width:250px; */
+  }
+
+  .Card h3 {
+    width: 80px;
+  }
+}

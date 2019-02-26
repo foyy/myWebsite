@@ -75,7 +75,7 @@ a {
 }
 
 .Hero a {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 600;
   /* color: white; */
   color:black;
@@ -93,7 +93,7 @@ a {
 
 .Hero .workButton {
   background: white;
-  color: rgb(180, 23, 26);
+  color: rgb(0, 0, 0, .8);
 }
 
 .beforeJump {
@@ -149,6 +149,25 @@ a {
   }
 }
 
+@media (max-width: 440px) {
+  .Hero .Logos {
+    grid-template-columns: 1 fr 1fr;
+    margin-top: 30px;
+    margin: auto;
+  }
+}
+
+
+
+hr {
+    display: block;
+    height: 10px;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.3);
+    margin: 1em 0;
+    padding: 0;
+}
+
 /************* ABOUT ME ***********/
 
 .AboutMe {
@@ -200,8 +219,13 @@ a {
 
 
 @media(max-width:720px) {
-  .AboutMeGroup{
+  .AboutMe{
+  row-gap: 50px;
+
+  }
+  .AboutMeGroup {
     grid-template-columns: repeat(1,1fr);
+
   }
 
   .AboutMeGroup img{
@@ -215,6 +239,19 @@ a {
 .AboutMePictures img {
   width: 300px;
 }
+
+.AboutMe h5 {
+  font-size: 18px;
+  font-weight: 4;
+  margin: 10px 5px;
+}
+
+.AboutMe p {
+  font-size: 16px;
+  margin: 10px 5px;
+
+}
+
 }
 
 
@@ -246,5 +283,10 @@ a {
 @media (max-width: 720px) {
   .CardGroup {
     grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+  }
+
+  .Cards h2 {
+    font-size:35px;
   }
 }

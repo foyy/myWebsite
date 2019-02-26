@@ -50,11 +50,12 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+    <hr />
     {/* BEGIN ABOUT ME */}
     <div className="AboutMe">
       <h1>About Me</h1>
       <div className="AboutMeGroup">
-          <img id="bigMePicture"  src={require('../images/me.jpg')} />
+        <img id="bigMePicture" src={require('../images/me.jpg')} />
         <div className="AboutMeText">
           <h5>
             I'm a Full Stack Software Engineer with a passion for building out beautiful
@@ -78,7 +79,9 @@ const IndexPage = () => (
         <img src={require('../images/tumblr_p5r8dr2yKi1r5ztono2_1280.jpg')} />
       </div>
     </div>
-  {/* ****BEGIN EXPERIENCE***** */}
+    <hr />
+
+    {/* ****BEGIN EXPERIENCE***** */}
     <div id="ScrollToExp" className="beforeJump" />
     <Section
       image={require('../images/wallpaper.jpg')}
@@ -88,7 +91,9 @@ const IndexPage = () => (
 I love making the web a better place for us to interact with our world. I build full-stack applications with a focus on modern design and dependency because the way we connect to our digital lives should be beautiful, intuitive, and reliable.
 I used to teach students about how wildly-amazing the time we live in is due to new technologies; now I help make it that way."
     />
-
+    <div>INSERT RESUME HERE</div>
+    <hr />
+    {/* ***BEGIN APPLICATIONS HERE*** */}
     <div id="ScrollToCards" className="beforeJump" />
     <div className="Cards">
       <h2>Applications</h2>
@@ -123,6 +128,8 @@ I used to teach students about how wildly-amazing the time we live in is due to 
         />
       </div>
 
+      <hr />
+    {/* ***BEGIN SKILLS HERE*** */}
       <div id="ScrollToSkills" className="beforeJump" />
       <CellSectionCaption>What I Know</CellSectionCaption>
       <CellSectionGroup>
