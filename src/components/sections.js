@@ -6,10 +6,10 @@ const SectionGroup = styled.div`
   background: url(${props => props.image});
   background-size: cover;
   display: grid;
-  height: 720px;
   grid-template-row: 300px;
   grid-gap: 20px;
   position: relative;
+  height: 800px;
 `
 
 const SectionLogo = styled.img`

@@ -34,18 +34,18 @@ const IndexPage = () => (
         </Link>
         <h5 />
         <div className="Logos">
-          <img src={require('../images/jsicon.svg')} />
+          <img src={require('../images/jsicon.svg')} width='100' />
           <img
             src={require('../images/iconfinder_react_1296845 (1).svg')}
-            width="80"
+            width="100"
           />
           <img
             src={require('/Users/hunterleeves/myWebsite/my-app/src/images/download (1).png')}
-            width="80"
+            width="100"
           />
           <img
             src={require('../images/iconfinder_nodejs-light_1012820.svg')}
-            width="80"
+            width="100"
           />
         </div>
       </div>
@@ -57,22 +57,18 @@ const IndexPage = () => (
           <img id="bigMePicture"  src={require('../images/me.jpg')} />
         <div className="AboutMeText">
           <h5>
-            I'm a full-stack engineer with a passion for building out beatiful
+            I'm a Full Stack Software Engineer with a passion for building out beautiful
             front ends and reliable RESTful APIs. I strive to write clean,
-            readable, modular code.
+            readable, and modular code.
           </h5>
           <p>
-            When I'm not coding, I'm writing and reading fiction, playing video
+            When I'm not coding, I'm reading and writing fiction, playing video
             games, and hanging with my partner of 7 years, Kelly, and my two
             goofy dogs, Albus and Luna.
           </p>
         </div>
       </div>
       <div className="AboutMePictures">
-      {/* <div>picture</div>
-      <div>picture</div>
-      <div>picture</div>
-      <div>picture</div> */}
         <img src={require('../images/meandkelly.jpg')} />
         <img src={require('../images/albus and luna.png')} />
         <img
@@ -82,7 +78,7 @@ const IndexPage = () => (
         <img src={require('../images/tumblr_p5r8dr2yKi1r5ztono2_1280.jpg')} />
       </div>
     </div>
-
+  {/* ****BEGIN EXPERIENCE***** */}
     <div id="ScrollToExp" className="beforeJump" />
     <Section
       image={require('../images/wallpaper.jpg')}
