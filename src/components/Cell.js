@@ -22,16 +22,19 @@ const CellGroup = styled.div`
   min-width: 320px;
   margin:10px;
   justify-content: center;
+  margin-left: -10px;
+
 `
 
 const Title = styled.h3`
+  font-family: 'Courier New', Courier, monospace;
 
   animation: ${cellAnimation};
   animation-duration: 3s;
-  animation-delay: .8s;
+  animation-delay: .1s;
   animation-fill-mode: forwards;
   opacity: 0;
-  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1.5);
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, .8);
 
 `
 
@@ -47,9 +50,9 @@ const Image = styled.div`
   margin: 15px;
   animation: ${cellAnimation};
   animation-duration: 3s;
-  animation-delay: .4s;
+  animation-delay: .1s;
   animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1.5);
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, .8);
   opacity: 0;
 
 
@@ -66,8 +69,8 @@ const Image = styled.div`
 const Cell = ({ title, image }) => (
   <ScrollAnimation
     animateIn="fadeIn"
-    delay={140}
-    duration={2}>
+    delay={115}
+    duration={1.5}>
 
     <CellGroup>
       <Image image={image} />

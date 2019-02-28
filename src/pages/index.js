@@ -6,10 +6,12 @@ import staticdata from '../../staticdata.json'
 import Cell from '../components/Cell'
 import styled from 'styled-components'
 import ScrollAnimation from 'react-animate-on-scroll'
+import "animate.css/animate.min.css";
 
-const CellSectionCaption = styled.p`
+const CellSectionCaption = styled.h1`
   text-align: center;
   font-size: 45px;
+  margin: 60px 0;
 `
 
 const CellSectionGroup = styled.div`
@@ -56,17 +58,22 @@ const IndexPage = () => (
       <h1>About Me</h1>
       <div className="AboutMeGroup">
         <img id="bigMePicture" src={require('../images/me.jpg')} />
-        <div className="AboutMeText">
-          <h5>
-            I'm a Full Stack Software Engineer with a passion for building out beautiful
-            front ends and reliable RESTful APIs. I strive to write clean,
-            readable, and modular code.
-          </h5>
-          <p>
-            When I'm not coding, I'm reading and writing fiction, playing video
-            games, and hanging with my partner of 7 years, Kelly, and my two
-            goofy dogs, Albus and Luna.
+        <div className="AboutMeText" >
+          <ScrollAnimation
+            animateIn="fadeIn"
+            delay={135}
+            duration={1.2}>
+            <p>
+              I'm a Full Stack Software Engineer with a passion for building out beautiful
+              front ends and reliable RESTful APIs. I strive to write clean,
+              readable, and modular code.
           </p>
+            <p>
+              When I'm not coding, I'm reading and writing fiction, playing video
+              games, and hanging with my partner of 7 years, Kelly, and my two
+              goofy dogs, Albus and Luna.
+          </p>
+          </ScrollAnimation>
         </div>
       </div>
       <div className="AboutMePictures">
@@ -82,21 +89,21 @@ const IndexPage = () => (
     <hr />
 
     {/* ****BEGIN EXPERIENCE***** */}
-    <div id="ScrollToExp" className="beforeJump" />
+    {/* <div id="ScrollToExp" className="beforeJump" />
     <Section
       image={require('../images/wallpaper.jpg')}
       logo={require('../images/logo-react.png')}
       title="Experience"
-      text="I'm a Full Stack Software Engineer with experience using Javascript, React, Vue, Node.js, Express, MongoDB, Postgres, HTML, and CSS.
-I love making the web a better place for us to interact with our world. I build full-stack applications with a focus on modern design and dependency because the way we connect to our digital lives should be beautiful, intuitive, and reliable.
-I used to teach students about how wildly-amazing the time we live in is due to new technologies; now I help make it that way."
     />
     <div>INSERT RESUME HERE</div>
-    <hr />
+
+    <hr /> */}
     {/* ***BEGIN APPLICATIONS HERE*** */}
     <div id="ScrollToCards" className="beforeJump" />
     <div className="Cards">
-      <h2>Applications</h2>
+      <h1>Applications</h1>
+      <p>I've been a core developer on multiple Full-Stack, Agile teams using Javascript, React, Vue, Node.js, Express, MongoDB, Postgres, HTML, and CSS. </p>
+      <p>I love making the web a better place for us to interact with our world. I build full-stack applications with a focus on modern design and dependency because the way we connect to our digital lives should be beautiful, intuitive, and reliable.</p>
       <div className="CardGroup">
         <Card
           title={staticdata.applications[0].title}
@@ -129,7 +136,7 @@ I used to teach students about how wildly-amazing the time we live in is due to 
       </div>
 
       <hr />
-    {/* ***BEGIN SKILLS HERE*** */}
+      {/* ***BEGIN SKILLS HERE*** */}
       <div id="ScrollToSkills" className="beforeJump" />
       <CellSectionCaption>What I Know</CellSectionCaption>
       <CellSectionGroup>
