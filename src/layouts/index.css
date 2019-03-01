@@ -42,10 +42,35 @@ a {
   line-height: 1.2;
   opacity: 0;
   animation: HeroAnimation;
-  animation-duration: 4s;
-  animation-delay: 0.4s;
+  animation-duration: 3s;
+  animation-delay: 0.6s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1.5);
+}
+
+
+.Hero h4 {
+  /* color: rgba(255, 255, 255, 0.94); */
+  color: black;
+  font-size: 30px;
+  line-height: 1.5;
+  animation: HeroAnimation 3s 1.1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  opacity: 0;
+  margin-bottom: 110px;
+}
+
+.Hero a {
+  font-size: 20px;
+  font-weight: 600;
+  /* color: white; */
+  animation: HeroAnimation 4s 1.8s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  opacity: 0;
+  color:black;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 9px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: 0.8s cubic-bezier(0.8, 0.6, 0.4, 8);
 }
 
 .Hero p {
@@ -53,19 +78,10 @@ a {
   color: black;
   font-size: 30px;
   line-height: 1.5;
-  animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  animation: HeroAnimation 3s 0.8s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   opacity: 0;
 }
 
-.Hero h4 {
-  /* color: rgba(255, 255, 255, 0.94); */
-  color: black;
-  font-size: 30px;
-  line-height: 1.5;
-  animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
-  opacity: 0;
-  margin-bottom: 110px;
-}
 
 .Hero h5 {
   font-size: 30px;
@@ -75,17 +91,6 @@ a {
   margin-top: 65px;
 }
 
-.Hero a {
-  font-size: 20px;
-  font-weight: 600;
-  /* color: white; */
-  color:black;
-  text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 9px 20px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  transition: 0.8s cubic-bezier(0.8, 0.6, 0.4, 8);
-}
 
 .Hero a:hover {
   background: black;
@@ -176,7 +181,6 @@ hr {
   display: grid;
   grid-template-rows: [header] 100px [myInfo] auto [pics] auto;
   justify-items: center;
-  grid-gap: 100px;
  
 }
 
@@ -188,21 +192,23 @@ hr {
 .AboutMeGroup {
   grid-row: myInfo;
   display:grid;
-  grid-template-columns: [bigPic] 1fr [myText] .75fr;
+  grid-template-rows: [bigPic] 1fr [myText] 1fr;
   justify-items: center;
-  grid-gap: 40px;
+  grid-gap: 20px;
 }
 
 .AboutMeGroup img{
-  width: 800px;
-  margin: 20px 20px
+  width: 30%;
+  margin: 20px 20px;
+  border-radius: 18px;
 }
 
 .AboutMe p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.3;
-  opacity: .6;
-  margin-right: 50px 30px;
+  opacity: .8;
+  /* text-align: center; */
+  margin:  0px 30%;
   font-family: times 'Courier New', Courier, monospace;
 
 }
@@ -212,13 +218,15 @@ hr {
   grid-row: pics;
   display:grid;
   grid-template-columns: repeat(4,1fr);
-  grid-gap: 30px;
+  grid-gap: 20px;
 
 }
 
 .AboutMePictures img {
-  width: 200px;
+  width: 180px;
   margin: 20px;
+  border-radius: 18px;
+
 }
 
 
@@ -242,6 +250,9 @@ hr {
 
 .AboutMePictures img {
   width: 200px;
+  border-radius: 18px;
+  margin: 40px;
+
 }
 
 .AboutMe h5 {
@@ -252,7 +263,7 @@ hr {
 
 .AboutMe p {
   font-size: 16px;
-
+  margin: 20px;
 }
 
 }
@@ -263,7 +274,8 @@ hr {
   margin-top: 20px;
   text-align: center;
   font-weight: 700;
-  background: linear-gradient(104deg, #050a27 0%, #4a548c 100%);
+  color: black;
+  background: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -272,11 +284,12 @@ hr {
   text-align: center;
   margin: 40px auto;
   width:60%;
+  font-size: 18px;
 
   
 }
 .CardGroup {
-  margin: 50px 40px 70px;
+  margin: 150px 40px 70px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;

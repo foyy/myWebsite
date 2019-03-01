@@ -1,16 +1,15 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Card from '../components/Card'
-import Section from '../components/sections'
 import staticdata from '../../staticdata.json'
 import Cell from '../components/Cell'
 import styled from 'styled-components'
 import ScrollAnimation from 'react-animate-on-scroll'
 import "animate.css/animate.min.css";
+import Contact from '../components/Contact';
 
 const CellSectionCaption = styled.h1`
   text-align: center;
-  font-size: 45px;
   margin: 60px 0;
 `
 
@@ -31,9 +30,9 @@ const IndexPage = () => (
       <div className="HeroGroup">
         <h1>Hunter Leeves</h1>
         <h4>Full Stack Engineer</h4>
-        <Link to="/video" className="workButton">
+        <a href="#ScrollToCards" className="workButton beforeJump">
           View My Work
-        </Link>
+        </a>
         <h5 />
         <div className="Logos">
           <img src={require('../images/jsicon.svg')} width='100' />
@@ -42,7 +41,7 @@ const IndexPage = () => (
             width="100"
           />
           <img
-            src={require('/Users/hunterleeves/myWebsite/my-app/src/images/download (1).png')}
+            src={require('../images/api.png')}
             width="100"
           />
           <img
@@ -68,6 +67,7 @@ const IndexPage = () => (
               front ends and reliable RESTful APIs. I strive to write clean,
               readable, and modular code.
           </p>
+            <br />
             <p>
               When I'm not coding, I'm reading and writing fiction, playing video
               games, and hanging with my partner of 7 years, Kelly, and my two
@@ -79,11 +79,12 @@ const IndexPage = () => (
       <div className="AboutMePictures">
         <img src={require('../images/meandkelly.jpg')} />
         <img src={require('../images/albus and luna.png')} />
+        <img src={require('../images/tumblr_p5r8dr2yKi1r5ztono2_1280.jpg')} />
+
         <img
           src={require('../images/28235416_1348738665230506_2031126635127883747_o.jpg')}
           width="30"
         />
-        <img src={require('../images/tumblr_p5r8dr2yKi1r5ztono2_1280.jpg')} />
       </div>
     </div>
     <hr />
@@ -101,7 +102,7 @@ const IndexPage = () => (
     {/* ***BEGIN APPLICATIONS HERE*** */}
     <div id="ScrollToCards" className="beforeJump" />
     <div className="Cards">
-      <h1>Applications</h1>
+      <h1>Experience</h1>
       <p>I've been a core developer on multiple Full-Stack, Agile teams using Javascript, React, Vue, Node.js, Express, MongoDB, Postgres, HTML, and CSS. </p>
       <p>I love making the web a better place for us to interact with our world. I build full-stack applications with a focus on modern design and dependency because the way we connect to our digital lives should be beautiful, intuitive, and reliable.</p>
       <div className="CardGroup">
@@ -151,6 +152,12 @@ const IndexPage = () => (
         ))}
       </CellSectionGroup>
     </div>
+
+    {/* *** BEGIN CONTACT HERE *** */}
+    <div id="ScrollToContact" className="beforeJump" />
+
+    <Contact />
+
   </div>
 )
 

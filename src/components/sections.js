@@ -29,6 +29,7 @@ const SectionTitle = styled.h3`
   line-height: 1.2;
   grid-column: title;
   text-align: center;
+  align-self: center;
   @media (max-width: 640px) {
     font-size: 40px;
   }

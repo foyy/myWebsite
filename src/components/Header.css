@@ -18,7 +18,7 @@
   margin: 0 auto;
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(5,auto);
+  grid-template-columns: repeat(4,auto);
   align-items: center;
   justify-items: center;
 }
@@ -27,6 +27,7 @@
   color: white;
   font-weight: 700;
 }
+
 
 .Header button {
   padding: 8px 20px;
@@ -55,7 +56,7 @@
   }
 
   .HeaderGroup {
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(3,auto);
   }
 
   .Header a:nth-child(4) {
