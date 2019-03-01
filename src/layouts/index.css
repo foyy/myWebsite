@@ -17,7 +17,9 @@ a {
   font-weight: 600;
 }
 
-
+h1{
+  font-size:40px;
+}
 .Hero {
   /* background: url('../images/bluebarhweb.jpg'); */
   background: white;
@@ -289,9 +291,9 @@ hr {
   
 }
 .CardGroup {
-  margin: 150px 40px 70px;
+  margin: 100px 40px 70px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
   justify-items: center;
 }
