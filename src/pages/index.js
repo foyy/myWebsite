@@ -129,7 +129,7 @@ const IndexPage = () => (
         />
         <Card
           title={staticdata.applications[3].title}
-          text={staticdata.applications[2].text}
+          text={staticdata.applications[3].text}
           image={staticdata.applications[3].image}
           url={staticdata.applications[3].url}
           co="Card Atweetio"

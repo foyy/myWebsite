@@ -21,7 +21,6 @@ h1{
   font-size:40px;
 }
 .Hero {
-  /* background: url('../images/bluebarhweb.jpg'); */
   background: white;
   height: 820px;
   background-size: cover;
@@ -38,7 +37,6 @@ h1{
 
 .Hero h1 {
   margin-bottom: 20px;
-  /* color: rgb(165, 100, 100); */
   color: black;
   font-size: 60px;
   line-height: 1.2;
@@ -52,7 +50,6 @@ h1{
 
 
 .Hero h4 {
-  /* color: rgba(255, 255, 255, 0.94); */
   color: black;
   font-size: 30px;
   line-height: 1.5;
@@ -64,7 +61,6 @@ h1{
 .Hero a {
   font-size: 20px;
   font-weight: 600;
-  /* color: white; */
   animation: HeroAnimation 4s 1.8s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   opacity: 0;
   color:black;
@@ -211,7 +207,7 @@ hr {
   opacity: .8;
   /* text-align: center; */
   margin:  0px 30%;
-  font-family: times 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
 
 }
 
@@ -291,10 +287,10 @@ hr {
   
 }
 .CardGroup {
-  margin: 100px 40px 70px;
+  margin: 80px 180px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 40px;
+  grid-gap: 120px;
   justify-items: center;
 }
 
